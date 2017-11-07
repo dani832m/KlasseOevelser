@@ -10,13 +10,13 @@ public class ReadData { //Angiver access modifier og klassens navn
 
     public static void main(String[] args) throws Exception { //Main-metode, kaster exceptions videre
 
-        // Laver nyt objekt i File-klassen ved navn "file"
+        //Laver nyt objekt i File-klassen ved navn "file"
         java.io.File file = new java.io.File("scores.txt");
 
-        // Laver nyt scanner-objekt og initialiserer det med vores file-objekt
+        //Laver nyt scanner-objekt og initialiserer det med vores file-objekt
         Scanner input = new Scanner(file);
 
-        // Læser data fra fil vha. while loop
+        //Læser data fra fil vha. while loop
         while (input.hasNext()) { //Kører så længe, der er indhold i filen
             String firstName = input.next();
             String mi = input.next();
@@ -26,7 +26,7 @@ public class ReadData { //Angiver access modifier og klassens navn
                     firstName + " " + mi + " " + lastName + " " + score);
         }
 
-        // Lukker filen igen (VIGTIGT!!!)
+        //Lukker filen igen (VIGTIGT!!!)
         input.close();
 
     } //Main lukkes
