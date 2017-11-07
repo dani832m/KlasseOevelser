@@ -11,7 +11,7 @@ public class ArealBeregner {
 
         System.out.print("Indtast cirkels radius: "); //Viser en tekstlinje, hvor brugeren kan indtaste cirkels radius
 
-		/* De næste tre linjer giver brugeren mulighed for indtastning og "scanner den" */
+        // De næste tre linjer giver brugeren mulighed for indtastning og "scanner den"
         Scanner input = new Scanner(System.in); //Vi SKAL bruge Scanner-klassen, så vi kan aflæse indtastningen
         double radius = 0; //Ny variabel, der kommer til at indeholde radius, når brugeren indtaster den
         radius = input.nextDouble(); //Indlæser det næste tal, som brugeren indtaster og sætter det til "radius"
